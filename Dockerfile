@@ -9,9 +9,9 @@ WORKDIR /usr/share/caddy
 
 COPY . .
 
-# expose port
+# ecpose port
 EXPOSE 80
 
-# run caddy
+# run CADDY
 CMD ["caddy", "run", "--config", "Caddyfile", "--adapter", "caddyfile"]
 
